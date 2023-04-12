@@ -1,7 +1,7 @@
 import { addComment } from './add.js';
 import { newComment, storedComments } from './api.js';
-import { commentCounter } from './counter.js';
 import CommentPopup from './commentPopup.js';
+import { commentCounter } from './counter.js';
 
 const submitComment = async (e) => {
   e.preventDefault();

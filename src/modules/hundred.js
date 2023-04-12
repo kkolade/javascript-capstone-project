@@ -20,11 +20,12 @@ class Hundred {
   getData = async (url) => {
     await fetch(url, {
       method: 'GET',
-    }).then((response) => response.json())
+    })
+      .then((response) => response.json())
       .then((data) => {
         localStorage.setItem('data', JSON.stringify(data));
       });
-  }
+  };
 
   // Methos to fetch likes
   getLikes = async (url) => {
